@@ -1,4 +1,4 @@
-baseURL: "https://kwmlabatccrc.github.io/"
+baseURL: "https://luwang-kk.github.io/"
 title: "王璐"
 theme: PaperMod
 
@@ -65,7 +65,7 @@ params:
   socialIcons:
     - name: github
       title: GitHub
-      url: "https://github.com/kwmlabatccrc"
+      url: "https://github.com/LUWANG-KK"
     - name: email
       title: 写信给我
       url: "mailto:kwmlabatccrc@gmail.com"
