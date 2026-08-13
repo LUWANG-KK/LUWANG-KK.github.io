@@ -14,4 +14,4 @@ hidemeta: true
 
 ---
 
-想联系我，可以发邮件到 [kwmlabatccrc@gmail.com](mailto:kwmlabatccrc@gmail.com)。
+想联系我，可以发邮件到 [wl1838459168@gmail.com](mailto:wl1838459168@gmail.com)。
