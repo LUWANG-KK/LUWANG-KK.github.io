@@ -1,5 +1,5 @@
 baseURL: "https://luwang-kk.github.io/"
-title: "王璐"
+title: "LU"
 theme: PaperMod
 
 locale: zh-cn
@@ -32,9 +32,9 @@ taxonomies:
 
 params:
   env: production
-  title: "王璐"
+  title: "LU"
   description: "记录一些东西。"
-  author: "王璐"
+  author: "LU"
   keywords: [博客, 随笔, 写作]
   DateFormat: "2006-01-02"
   defaultTheme: auto # auto / light / dark
