@@ -1,0 +1,122 @@
+baseURL: "https://kwmlabatccrc.github.io/"
+title: "王璐"
+theme: PaperMod
+
+locale: zh-cn
+defaultContentLanguage: zh
+hasCJKLanguage: true
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+pagination:
+  pagerSize: 10
+
+minify:
+  disableXML: true
+
+# 首页 JSON 输出用于站内搜索
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+taxonomies:
+  category: categories
+  tag: tags
+
+params:
+  env: production
+  title: "王璐"
+  description: "记录一些东西。"
+  author: "王璐"
+  keywords: [博客, 随笔, 写作]
+  DateFormat: "2006-01-02"
+  defaultTheme: auto # auto / light / dark
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowWordCount: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  TocOpen: false
+  ShowLastMod: false
+  hidemeta: false
+  hideSummary: false
+  comments: false
+  disableScrollToTop: false
+  disableSpecial1stPost: false
+
+  # 首页顶部的自我介绍
+  homeInfoParams:
+    Title: "你好 👋"
+    Content: >
+      这里是我的自留地，记录一些东西。
+
+  socialIcons:
+    - name: github
+      title: GitHub
+      url: "https://github.com/kwmlabatccrc"
+    - name: email
+      title: 写信给我
+      url: "mailto:kwmlabatccrc@gmail.com"
+    - name: rss
+      title: RSS
+      url: "index.xml"
+
+  # 站内搜索（Fuse.js）配置
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 1
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 40
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 50
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 60
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
